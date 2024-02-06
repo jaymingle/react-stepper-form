@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Confirm = () => {
+const DisplayData = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const Confirm = () => {
     );
 };
 
-export default Confirm;
+export default DisplayData;
