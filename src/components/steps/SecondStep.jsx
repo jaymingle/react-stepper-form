@@ -1,8 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Button, TextField} from "@mui/material";
 import "../../App.css"
+import {multiStepContext} from "../../StepContext.jsx";
 
 const SecondStep = () => {
+
+    const {currentStep, setCurrentStep} = useContext(multiStepContext);
+
+
     return (
         <div className="step_container">
             <h3>Step 2</h3>
