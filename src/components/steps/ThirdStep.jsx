@@ -4,7 +4,7 @@ import {multiStepContext} from "../../StepContext.jsx";
 
 const ThirdStep = () => {
 
-    const {currentStep, setUserData, setCurrentStep} = useContext(multiStepContext);
+    const {currentStep, setUserData, setCurrentStep, submitData} = useContext(multiStepContext);
 
     const previousStepHandler = () => {
         if(currentStep !== 1){
@@ -12,13 +12,13 @@ const ThirdStep = () => {
         }
     }
 
-    const submitStepHandler = () => {
-        // if(currentStep !== 3){
-        //     setCurrentStep(step => step + 1)
-        // }
-        console.log("submitted")
-        setCurrentStep(step => step -2)
-    }
+    // const submitStepHandler = () => {
+    //     // if(currentStep !== 3){
+    //     //     setCurrentStep(step => step + 1)
+    //     // }
+    //     console.log("submitted")
+    //     setCurrentStep(step => step -2)
+    // }
 
     return (
         <div className="step_container">
@@ -29,7 +29,7 @@ const ThirdStep = () => {
             <div className="buttons">
                 <div className="buttons">
                     <Button className="button" variant="contained" color="secondary" onClick={previousStepHandler}>Previous</Button>
-                    <Button className="button" variant="contained" color="primary" onClick={submitStepHandler}>Submit</Button>
+                    <Button className="button" variant="contained" color="primary" onClick={submitData}>Submit</Button>
                 </div>
             </div>
         </div>
