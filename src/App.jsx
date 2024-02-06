@@ -4,14 +4,13 @@ import './App.css'
 import FirstStep from "./components/steps/FirstStep.jsx";
 import SecondStep from "./components/steps/SecondStep.jsx";
 import ThirdStep from "./components/steps/ThirdStep.jsx";
-import DisplayData from "./components/DisplayData.jsx";
 import {Stepper, StepLabel, Step} from "@mui/material";
-import {multiStepContext} from "../src/components/StepContext";
+import {multiStepContext} from "./StepContext.jsx";
 
 function App() {
 
     const {currentStep, finalData} = useContext(multiStepContext)
-  // const [step, setStep] = useState(1)
+    console.log(currentStep)
 
   const showStep = step => {
     switch(step){
