@@ -8,11 +8,15 @@ const SecondStep = () => {
     const {currentStep, setCurrentStep} = useContext(multiStepContext);
 
     const previousStepHandler = () => {
-
+        if(currentStep !== 1){
+            setCurrentStep(step => step - 1)
+        }
     }
 
     const nextStepHandler = () => {
-
+        if(currentStep !== 3){
+            setCurrentStep(step => step + 1)
+        }
     }
 
     return (
