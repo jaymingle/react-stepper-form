@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import App from './App.jsx'
 
-export const multiStepContext = React.createContext()
+export const multiStepContext = React.createContext({})
 
 const StepContext= () => {
 
