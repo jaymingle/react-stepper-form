@@ -7,6 +7,13 @@ const SecondStep = () => {
 
     const {currentStep, setCurrentStep} = useContext(multiStepContext);
 
+    const previousStepHandler = () => {
+
+    }
+
+    const nextStepHandler = () => {
+
+    }
 
     return (
         <div className="step_container">
@@ -15,8 +22,8 @@ const SecondStep = () => {
             <TextField label="Country" margin="normal" variant="outlined" color="secondary"/>
             <TextField label="District" margin="normal" variant="outlined" color="secondary"/>
             <div className="buttons">
-                <Button className="button" variant="contained" color="secondary">Previous</Button>
-                <Button className="button" variant="contained" color="primary">Next</Button>
+                <Button className="button" variant="contained" color="secondary" onClick={previousStepHandler}>Previous</Button>
+                <Button className="button" variant="contained" color="primary" onClick={nextStepHandler}>Next</Button>
             </div>
         </div>
     );
