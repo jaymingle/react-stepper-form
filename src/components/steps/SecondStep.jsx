@@ -9,7 +9,7 @@ const SecondStep = () => {
             <TextField label="First Name" margin="normal" variant="outlined" color="secondary"/>
             <TextField label="Last Name" margin="normal" variant="outlined" color="secondary"/>
             <TextField label="Contact Number" margin="normal" variant="outlined" color="secondary"/>
-            <Button variant="contained" color="primary">Next</Button>
+            <Button className="button" variant="contained" color="primary">Next</Button>
         </div>
     );
 };

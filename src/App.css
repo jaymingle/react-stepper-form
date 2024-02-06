@@ -15,6 +15,10 @@
   left: 22%;
 }
 
+.button{
+  width: 150px;
+}
+
 .step_container{
   display: flex;
   flex-direction: column;
