@@ -20,6 +20,9 @@
 }
 
 .buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .step_container{
