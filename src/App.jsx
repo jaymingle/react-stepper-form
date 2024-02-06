@@ -4,7 +4,7 @@ import FirstStep from "./components/steps/FirstStep.jsx";
 function App() {
 
   return (
-    <div>
+    <div className="app_container">
           <FirstStep/>
     </div>
   )
