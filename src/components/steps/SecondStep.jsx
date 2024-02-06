@@ -5,7 +5,7 @@ import {multiStepContext} from "../../StepContext.jsx";
 
 const SecondStep = () => {
 
-    const {currentStep,setUserData, setCurrentStep} = useContext(multiStepContext);
+    const {currentStep, userData, setUserData, setCurrentStep} = useContext(multiStepContext);
 
     const previousStepHandler = () => {
         if(currentStep !== 1){
