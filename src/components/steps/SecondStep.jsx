@@ -22,9 +22,9 @@ const SecondStep = () => {
     return (
         <div className="step_container">
             <h3>Step 2</h3>
-            <TextField label="Email" margin="normal" variant="outlined" color="secondary"/>
-            <TextField label="Country" margin="normal" variant="outlined" color="secondary"/>
-            <TextField label="District" margin="normal" variant="outlined" color="secondary"/>
+            <TextField {e => setUserData({...userData, 'email': e.target.value})} label="Email" margin="normal" variant="outlined" color="secondary"/>
+            <TextField {e => setUserData({...userData, 'country': e.target.value})} label="Country" margin="normal" variant="outlined" color="secondary"/>
+            <TextField {e => setUserData({...userData, 'district': e.target.value})} label="District" margin="normal" variant="outlined" color="secondary"/>
             <div className="buttons">
                 <Button className="button" variant="contained" color="secondary" onClick={previousStepHandler}>Previous</Button>
                 <Button className="button" variant="contained" color="primary" onClick={nextStepHandler}>Next</Button>
