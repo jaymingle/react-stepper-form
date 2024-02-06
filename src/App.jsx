@@ -10,7 +10,6 @@ import {multiStepContext} from "./StepContext.jsx";
 function App() {
 
     const {currentStep, finalData} = useContext(multiStepContext)
-    console.log(currentStep)
 
   const showStep = step => {
     switch(step){
