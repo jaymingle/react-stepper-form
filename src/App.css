@@ -19,6 +19,9 @@
   width: 150px;
 }
 
+.buttons{
+}
+
 .step_container{
   display: flex;
   flex-direction: column;

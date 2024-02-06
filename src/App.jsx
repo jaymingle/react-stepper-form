@@ -37,7 +37,7 @@ function App() {
                   <StepLabel>Personal</StepLabel>
               </Step>
             <Step>
-                  <StepLabel>Address</StepLabel>
+                  <StepLabel>Location</StepLabel>
               </Step>
             <Step>
                   <StepLabel>Work</StepLabel>
