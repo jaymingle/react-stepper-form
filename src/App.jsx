@@ -33,7 +33,7 @@ function App() {
     <div className="app_container">
       <h3 style={{color: "red", fontSize: "2rem", textDecoration: "underline"}}>Multi Step Form</h3>
       <div className="center_element center-stepper">
-          <Stepper style={{width: '18%'}} activeStep={1} orientation="horizontal">
+          <Stepper style={{width: '18%'}} activeStep={currentStep-1} orientation="horizontal">
               <Step>
                   <StepLabel>Personal</StepLabel>
               </Step>
@@ -45,7 +45,7 @@ function App() {
               </Step>
           </Stepper>
       </div>
-      {showStep(3)}
+      {showStep(currentStep)}
 
       {/*<DisplayData/>*/}
 
