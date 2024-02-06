@@ -9,7 +9,9 @@ const FirstStep = () => {
                 <TextField label="First Name" margin="normal" variant="outlined" color="secondary"/>
                 <TextField label="Last Name" margin="normal" variant="outlined" color="secondary"/>
                 <TextField label="Contact Number" margin="normal" variant="outlined" color="secondary"/>
-               <Button className="button" variant="contained" color="primary">Next</Button>
+                <div className="buttons">
+                    <Button className="button" variant="contained" color="primary">Next</Button>
+                </div>
         </div>
     );
 };
