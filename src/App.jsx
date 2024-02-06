@@ -9,29 +9,45 @@ import {Stepper, StepLabel, Step} from "@mui/material";
 
 function App() {
 
-  const [step, setStep] = useState(1)
+  // const [step, setStep] = useState(1)
+
+  const showStep = step => {
+    switch(step){
+      case 1:
+        return <FirstStep/>
+
+      case 2:
+        return <SecondStep/>
+
+      case 3:
+        return <ThirdStep/>
+
+      default:
+        return <FirstStep/>
+    }
+
+  }
 
   return (
     <div className="app_container">
-        <h3 style={{color: "red", fontSize: "2rem", textDecoration: "underline"}}>Multi Step Form</h3>
-          <FirstStep/>
-          <SecondStep/>
-          <ThirdStep/>
-          <DisplayData/>
-
-      <div className="center-stepper">
-          <Stepper style={{width: '18%'}} activeStep={"1"} orientation="horizontal">
+      <h3 style={{color: "red", fontSize: "2rem", textDecoration: "underline"}}>Multi Step Form</h3>
+      <div className="center_element center-stepper">
+          <Stepper style={{width: '18%'}} activeStep={1} orientation="horizontal">
               <Step>
-                  <StepLabel></StepLabel>
+                  <StepLabel>Personal</StepLabel>
               </Step>
             <Step>
-                  <StepLabel></StepLabel>
+                  <StepLabel>Address</StepLabel>
               </Step>
             <Step>
-                  <StepLabel></StepLabel>
+                  <StepLabel>Work</StepLabel>
               </Step>
           </Stepper>
       </div>
+      {showStep(3)}
+
+      {/*<DisplayData/>*/}
+
 
     </div>
   )

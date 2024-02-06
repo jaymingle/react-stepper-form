@@ -10,6 +10,11 @@
   margin: 0 auto;
 }
 
+.center_element{
+  position: relative;
+  left: 22%;
+}
+
 .step_container{
   display: flex;
   flex-direction: column;
