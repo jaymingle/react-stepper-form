@@ -23,9 +23,9 @@ const ThirdStep = () => {
     return (
         <div className="step_container">
             <h3>Step 3</h3>
-            <TextField onChange={e => setUserData({...userData, 'city': e.target.value})} label="City" margin="normal" variant="outlined" color="secondary"/>
-            <TextField onChange={e => setUserData({...userData, 'landmark': e.target.value})} label="Landmark" margin="normal" variant="outlined" color="secondary"/>
-            <TextField onChange={e => setUserData({...userData, 'postalAddress': e.target.value})} label="Postal Address" margin="normal" variant="outlined" color="secondary"/>
+            <TextField value={userData.city} onChange={e => setUserData({...userData, 'city': e.target.value})} label="City" margin="normal" variant="outlined" color="secondary"/>
+            <TextField value={userData.landmark} onChange={e => setUserData({...userData, 'landmark': e.target.value})} label="Landmark" margin="normal" variant="outlined" color="secondary"/>
+            <TextField value={userData.postalAddress} onChange={e => setUserData({...userData, 'postalAddress': e.target.value})} label="Postal Address" margin="normal" variant="outlined" color="secondary"/>
             <div className="buttons">
                 <div className="buttons">
                     <Button className="button" variant="contained" color="secondary" onClick={previousStepHandler}>Previous</Button>
