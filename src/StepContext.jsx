@@ -12,6 +12,7 @@ const StepContext = () => {
     const submitData = () => {
         setCurrentStep(1)
         console.log(userData)
+        setUserData([])
     }
 
     return (
